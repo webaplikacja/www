@@ -53,10 +53,10 @@ moduł zapisywania poprzez git clone:
       }      
       
 
-Zapytanie http
+Zapytanie http json
 
       {            
-        "http_post": {        
+        "http_post_json": {        
             "https://github.com/index.php" : {
                 "name" "Tom",
             }
@@ -64,4 +64,19 @@ Zapytanie http
       }       
       
  
+ Zapytanie http with post data from response
 
+      {            
+        "http_post_response": {        
+            "https://github.com/index.php": "https://translate.com/output?something"
+        }
+      }   
+
+
+ Zapytanie http with file as parameter
+
+      {            
+        "http_file_response": {        
+            "https://github.com/index.php": "https://file.com/type?png"
+        }
+      }   
