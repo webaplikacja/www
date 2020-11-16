@@ -86,10 +86,11 @@ http with file as parameter
 http with file as parameter
 
       {            
-        "http_file_response": {        
+        "http_file_response_json": {        
             "https://github.com/index.php": {
                 "https://file.com/type": {
                     "mimetype": "png"
                 }
-        }
+            }
+         }
       }  
