@@ -14,6 +14,7 @@ Każda WebAplikacji posiada definicję, która określa użyte w niej moduły
 definicja jest napisana w formacie JSON
 
 Definicja jest budowana w prostym standardzie JSON:
+Adres docelowy  <-  zasób
 
     {[
       "XPATH" : "URL",
@@ -32,9 +33,9 @@ Skrypty jRuns można uruchomić na serwerze lokalnym, zdalnie, lub obu, aby komu
 
 
 ## przykład
-zapisz tę stronę na serwerze porpzez ftp
+zapisz tę stronę na serwerze poprzez ftp
 
-moduł zapisywania poprzez FTP:
+
 
       {            
         "ftp": {        
@@ -42,9 +43,25 @@ moduł zapisywania poprzez FTP:
         }
       }
       
-      
+
+moduł zapisywania poprzez git clone:
+
       {            
-        "gitclone": {        
+        "git_clone": {        
             "/var/www" : "https://github.com/webaplikacja/www",
         }
       }      
+      
+
+Zapytanie http
+
+      {            
+        "http_post": {        
+            "https://github.com/index.php" : {
+                "name" "Tom",
+            }
+        }
+      }       
+      
+ 
+
