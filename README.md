@@ -17,7 +17,7 @@ Definicja jest budowana w prostym standardzie JSON:
 Adres docelowy  <-  zasób
 
     {[
-      "XPATH" : "URL",
+      "XPATH" : "URL/STRING/JSON",
       ....
     ]}
     
