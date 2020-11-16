@@ -32,7 +32,8 @@ do którego odnosi się definicja.
 Skrypty jRuns można uruchomić na serwerze lokalnym, zdalnie, lub obu, aby komunikowały się ze sobą i dbały o automatyzację procesów
 
 
-## przykład
+## przykład backend
+
 zapisz tę stronę na serwerze poprzez ftp
 
 
@@ -53,7 +54,7 @@ moduł zapisywania poprzez git clone:
       }      
       
 
-Zapytanie http json
+http, input data: json
 
       {            
         "http_post_json": {        
@@ -64,7 +65,7 @@ Zapytanie http json
       }       
       
  
- Zapytanie http with post data from response
+http with post data from response
 
       {            
         "http_post_response": {        
@@ -73,10 +74,22 @@ Zapytanie http json
       }   
 
 
- Zapytanie http with file as parameter
+http with file as parameter
 
       {            
         "http_file_response": {        
-            "https://github.com/index.php": "https://file.com/type?png"
+            "https://github.com/index.php": "https://file.com/type?mimetype=png"
         }
       }   
+
+
+http with file as parameter
+
+      {            
+        "http_file_response": {        
+            "https://github.com/index.php": {
+                "https://file.com/type": {
+                    "mimetype": "png"
+                }
+        }
+      }  
