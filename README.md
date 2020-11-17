@@ -9,6 +9,12 @@ Zamysł WebAplikacji polega na tworzeniu aplikacji:
 + a przy okazji tworzenie ogromnej bazy mediów do ponownego użycia w kolejnych projektach
 + dane są zapisywane w zewnętrznych serwisach dostępnych po autoryzacji użytkownika
 
+## Webaplikacja to implementacja 3 narzędzi:
++ jLoads do ładowania aplikacji na frontendzie
++ jRuns do ładowania powyższego kodu na serwer
++ jBodys do przechowywania aplikacji na zdalnych serwerach do wielokrotnego użycia w modularyzowanych aplikacjach w oparciu o jLoads
+
+
 ## Zasada działania
 
 Każda WebAplikacji posiada definicję, która określa użyte w niej moduły
