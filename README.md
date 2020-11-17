@@ -5,8 +5,9 @@ Landing Page WebAplikacja
 
 Zamysł WebAplikacji polega na tworzeniu aplikacji:
 + prostych w budowie
-+ z wykorzystaniem już raz napisanym kodzie
++ z wykorzystaniem już raz napisanego kodu
 + a przy okazji tworzenie ogromnej bazy mediów do ponownego użycia w kolejnych projektach
++ dane są zapisywane w zewnętrznych serwisach dostępnych po autoryzacji użytkownika
 
 ## Zasada działania
 
